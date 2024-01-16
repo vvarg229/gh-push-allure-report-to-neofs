@@ -49,7 +49,7 @@ inputs:
 outputs:
   REPORT_NEOFS_URL:
     description: Container URL
-    value: ${{ steps.gh_push_to_neofs.outputs.OUTPUT_CONTAINER_URL }}${{ github.run_number }}-${{ steps.date.outputs.timestamp }}
+    value: ${{ steps.gh_push_to_neofs.outputs.OUTPUT_CONTAINER_URL }}${{ github.run_number }}-${{ steps.date.outputs.timestamp }}/
   COMBINED_REPORT_DIR:
     description: Path to the directory with the combined Allure report and zip attachments
     value: ${{ steps.set_report_dir.outputs.REPORT_DIR }}
