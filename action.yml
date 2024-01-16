@@ -141,7 +141,7 @@ runs:
         echo "LIFETIME=$LIFETIME" >> $GITHUB_ENV
 
     - name: Generate Allure report
-      uses: simple-elf/allure-report-action@v1.6
+      uses: simple-elf/allure-report-action@v1.8
       if: always()
       id: allure-report
       with:
