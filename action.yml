@@ -159,6 +159,7 @@ runs:
         INDEX_HTML_FILE: ${{ inputs.ALLURE_GENERATED_DIR }}/index.html
       run: |
         sudo chmod -R a+rw "$ALLURE_GENERATED_DIR"
+        sudo chmod -R a+rw "$ALLURE_RESULTS_DIR"
 
     - name: Create a directory tree for the generated Allure report
       shell: bash
